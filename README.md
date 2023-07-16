@@ -3,6 +3,10 @@
 [![CodeSize](https://img.shields.io/github/languages/code-size/geektutu/7days-golang)](https://github.com/geektutu/7days-golang)
 [![LICENSE](https://img.shields.io/badge/license-MIT-green)](https://mit-license.org/)
 
+## Git branch
+- master: original author
+- eric: my modifications
+
 <details>
 <summary><strong>README 中文版本</strong></summary>
 <div>
@@ -15,13 +19,15 @@
 
 推荐 **[Go 语言笔试面试题](https://geektutu.com/post/qa-golang.html)**，加深对 Go 语言的理解。
 
-推荐 **[Go 语言高性能编程](https://geektutu.com/post/high-performance-go.html)**([项目地址](https://github.com/geektutu/high-performance-go))，写出高性能的 Go 代码。
+推荐 **[Go 语言高性能编程](https://geektutu.com/post/high-performance-go.html)
+**([项目地址](https://github.com/geektutu/high-performance-go))，写出高性能的 Go 代码。
 
 期待关注我的「[知乎专栏](https://zhuanlan.zhihu.com/geekgo)」和「[微博](http://weibo.com/geektutu)」，查看最近的文章和动态。
 
 ### 7天用Go从零实现Web框架 - Gee
 
-[Gee](https://geektutu.com/post/gee.html) 是一个模仿 [gin](https://github.com/gin-gonic/gin) 实现的 Web 框架，[Go Gin简明教程](https://geektutu.com/post/quick-go-gin.html)可以快速入门。
+[Gee](https://geektutu.com/post/gee.html) 是一个模仿 [gin](https://github.com/gin-gonic/gin) 实现的 Web
+框架，[Go Gin简明教程](https://geektutu.com/post/quick-go-gin.html)可以快速入门。
 
 - 第一天：[前置知识(http.Handler接口)](https://geektutu.com/post/gee-day1.html) | [Code](gee-web/day1-http-base)
 - 第二天：[上下文设计(Context)](https://geektutu.com/post/gee-day2.html) | [Code](gee-web/day2-context)
@@ -33,7 +39,8 @@
 
 ### 7天用Go从零实现分布式缓存 GeeCache
 
-[GeeCache](https://geektutu.com/post/geecache.html) 是一个模仿 [groupcache](https://github.com/golang/groupcache) 实现的分布式缓存系统
+[GeeCache](https://geektutu.com/post/geecache.html) 是一个模仿 [groupcache](https://github.com/golang/groupcache)
+实现的分布式缓存系统
 
 - 第一天：[LRU 缓存淘汰策略](https://geektutu.com/post/geecache-day1.html) | [Code](gee-cache/day1-lru)
 - 第二天：[单机并发缓存](https://geektutu.com/post/geecache-day2.html) | [Code](gee-cache/day2-single-node)
@@ -45,9 +52,11 @@
 
 ### 7天用Go从零实现ORM框架 GeeORM
 
-[GeeORM](https://geektutu.com/post/geeorm.html) 是一个模仿 [gorm](https://github.com/jinzhu/gorm) 和 [xorm](https://github.com/go-xorm/xorm) 的 ORM 框架
+[GeeORM](https://geektutu.com/post/geeorm.html) 是一个模仿 [gorm](https://github.com/jinzhu/gorm)
+和 [xorm](https://github.com/go-xorm/xorm) 的 ORM 框架
 
-gorm 准备推出完全重写的 v2 版本(目前还在开发中)，相对 gorm-v1 来说，xorm 的设计更容易理解，所以 geeorm 接口设计上主要参考了 xorm，一些细节实现上参考了 gorm。
+gorm 准备推出完全重写的 v2 版本(目前还在开发中)，相对 gorm-v1 来说，xorm 的设计更容易理解，所以 geeorm 接口设计上主要参考了
+xorm，一些细节实现上参考了 gorm。
 
 - 第一天：[database/sql 基础](https://geektutu.com/post/geeorm-day1.html) | [Code](gee-orm/day1-database-sql)
 - 第二天：[对象表结构映射](https://geektutu.com/post/geeorm-day2.html) | [Code](gee-orm/day2-reflect-schema)
@@ -57,10 +66,10 @@ gorm 准备推出完全重写的 v2 版本(目前还在开发中)，相对 gorm-
 - 第六天：[支持事务(Transaction)](https://geektutu.com/post/geeorm-day6.html) | [Code](gee-orm/day6-transaction)
 - 第七天：[数据库迁移(Migrate)](https://geektutu.com/post/geeorm-day7.html) | [Code](gee-orm/day7-migrate)
 
-
 ### 7天用Go从零实现RPC框架 GeeRPC
 
-[GeeRPC](https://geektutu.com/post/geerpc.html) 是一个基于 [net/rpc](https://github.com/golang/go/tree/master/src/net/rpc) 开发的 RPC 框架
+[GeeRPC](https://geektutu.com/post/geerpc.html)
+是一个基于 [net/rpc](https://github.com/golang/go/tree/master/src/net/rpc) 开发的 RPC 框架
 GeeRPC 是基于 Go 语言标准库 `net/rpc` 实现的，添加了协议交换、服务注册与发现、负载均衡等功能，代码约 1k。
 
 - 第一天 - [服务端与消息编码](https://geektutu.com/post/geerpc-day1.html) | [Code](gee-rpc/day1-codec)
@@ -83,7 +92,8 @@ GeeRPC 是基于 Go 语言标准库 `net/rpc` 实现的，添加了协议交换�
 </div>
 </details>
 
-What can be accomplished in 7 days? A gin-like web framework? A distributed cache like groupcache? Or a simple Python interpreter? Hope this repo can give you the answer.
+What can be accomplished in 7 days? A gin-like web framework? A distributed cache like groupcache? Or a simple Python
+interpreter? Hope this repo can give you the answer.
 
 ## Web Framework - Gee
 
@@ -99,21 +109,24 @@ What can be accomplished in 7 days? A gin-like web framework? A distributed cach
 
 ## Distributed Cache - GeeCache
 
-[GeeCache](https://geektutu.com/post/geecache.html) is a [groupcache](https://github.com/golang/groupcache)-like distributed cache
+[GeeCache](https://geektutu.com/post/geecache.html) is a [groupcache](https://github.com/golang/groupcache)-like
+distributed cache
 
 - Day 1 - LRU (Least Recently Used) Caching Strategy [Code](gee-cache/day1-lru)
 - Day 2 - Single Machine Concurrent Cache [Code](gee-cache/day2-single-node)
 - Day 3 - Launch a HTTP Server [Code](gee-cache/day3-http-server)
 - Day 4 - Consistent Hash Algorithm [Code](gee-cache/day4-consistent-hash)
 - Day 5 - Communication between Distributed Nodes [Code](gee-cache/day5-multi-nodes)
-- Day 6 - Cache Breakdown & Single Flight  | [Code](gee-cache/day6-single-flight)
+- Day 6 - Cache Breakdown & Single Flight | [Code](gee-cache/day6-single-flight)
 - Day 7 - Use Protobuf as RPC Data Exchange Type | [Code](gee-cache/day7-proto-buf)
 
 ## Object Relational Mapping - GeeORM
 
-[GeeORM](https://geektutu.com/post/geeorm.html) is a [gorm](https://github.com/jinzhu/gorm)-like and [xorm](https://github.com/go-xorm/xorm)-like object relational mapping library
+[GeeORM](https://geektutu.com/post/geeorm.html) is a [gorm](https://github.com/jinzhu/gorm)-like
+and [xorm](https://github.com/go-xorm/xorm)-like object relational mapping library
 
-Xorm's desgin is easier to understand than gorm-v1, so the main designs references xorm and some detailed implementions references gorm-v1.
+Xorm's desgin is easier to understand than gorm-v1, so the main designs references xorm and some detailed implementions
+references gorm-v1.
 
 - Day 1 - database/sql Basic | [Code](gee-orm/day1-database-sql)
 - Day 2 - Object Schame Mapping | [Code](gee-orm/day2-reflect-schema)
@@ -125,9 +138,11 @@ Xorm's desgin is easier to understand than gorm-v1, so the main designs referenc
 
 ## RPC Framework - GeeRPC
 
-[GeeRPC](https://geektutu.com/post/geerpc.html) is a [net/rpc](https://github.com/golang/go/tree/master/src/net/rpc)-like RPC framework
+[GeeRPC](https://geektutu.com/post/geerpc.html) is a [net/rpc](https://github.com/golang/go/tree/master/src/net/rpc)
+-like RPC framework
 
-Based on golang standard library `net/rpc`, GeeRPC implements more features. eg, protocol exchange, service registration and discovery, load balance, etc.
+Based on golang standard library `net/rpc`, GeeRPC implements more features. eg, protocol exchange, service registration
+and discovery, load balance, etc.
 
 - Day 1 - Server Message Codec | [Code](gee-rpc/day1-codec)
 - Day 2 - Concurrent Client | [Code](gee-rpc/day2-client)
